@@ -21,6 +21,8 @@ The `sudo` password for the VS Code editor is: `code-server`
 
 In the VS Code editor terminal at `/config/workspace`, you can run `git clone https://other.theme.git` to clone community themes listed on [Awesome Marp](https://github.com/marp-team/awesome-marp).
 
+If you encounter permission issues, you can navigate to the parent directory (`marp-server/..`) and run `sudo chmod -R 0777 marp-server` to fix the permissions.
+
 # 🧹How to Stop and Clean Up
 
 ```bash
