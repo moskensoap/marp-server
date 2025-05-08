@@ -8,6 +8,9 @@ services:
         ports:
             - '38443:8443'
         environment:
+            - PUID=1000
+            - PGID=1000
+            - TZ=Etc/UTC
             - SUDO_PASSWORD=code-server
         container_name: code-server
         tty: true
