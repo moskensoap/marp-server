@@ -17,7 +17,7 @@ services:
         stdin_open: true
         
     marp-cli:
-        command: '-s .'
+        command: '--allow-local-files -s .'
         image: marpteam/marp-cli
         ports:
             - '37717:37717'
