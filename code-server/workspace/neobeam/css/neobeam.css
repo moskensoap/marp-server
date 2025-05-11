@@ -336,9 +336,9 @@ ul, ol {
 blockquote, pre, table {
     --_block-bg-color: var(--block-bg-color, var(--text-color-negative));
     --radius: var(--border-radius-default);
-    min-width: 40%;
+    min-width: 100%;
     width: fit-content;
-    max-width: 60%;
+    max-width: 100%;
 
     padding: var(--text-padding);
     margin: calc(.75*var(--text-padding)) 0;
@@ -455,7 +455,7 @@ table tr:nth-of-type(2n-1){
 img {
     display: block;
     width: fit-content;
-    max-width: 50%;
+    max-width: 100%;
     margin: var(--text-padding) 0;
 
     border-radius: var(--border-radius-default);
