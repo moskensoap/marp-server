@@ -333,10 +333,10 @@ ul, ol {
 /********************************/
 
 /* Styling applied to both */
-blockquote, pre, table {
+blockquote, table {
     --_block-bg-color: var(--block-bg-color, var(--text-color-negative));
     --radius: var(--border-radius-default);
-    min-width: 100%;
+    min-width: 0%;
     width: fit-content;
     max-width: 100%;
 
@@ -395,6 +395,21 @@ blockquote:has(> h4):nth-of-type(3n){
 
 /* Code blocks */
 pre, code, samp {
+    --_block-bg-color: var(--block-bg-color, var(--text-color-negative));
+    --radius: var(--border-radius-default);
+    min-width: 100%;
+    width: fit-content;
+    max-width: 100%;
+
+    padding: var(--text-padding);
+    margin: calc(.75*var(--text-padding)) 0;
+
+    border-radius: var(--radius);
+    background-color: var(--_block-bg-color);
+
+    color: var(--text-color-lighter);
+    /*                               */
+
     font-family: var(--monospace-font);
 
     /* Unset default theme setting */
@@ -455,7 +470,7 @@ table tr:nth-of-type(2n-1){
 img {
     display: block;
     width: fit-content;
-    max-width: 100%;
+    max-width: 50%;
     margin: var(--text-padding) 0;
 
     border-radius: var(--border-radius-default);

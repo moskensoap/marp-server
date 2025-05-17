@@ -147,43 +147,13 @@ In Marp slides, `absolute` is most useful for precisely placing elements like im
 
 <style>
 .center-container {
-  display: flex;                /* Specifies the layout of a container using Flexbox.
-                                 * Other values: 
-                                 * - block: default block-level container 
-                                 * - inline: behaves like an inline element 
-                                 * - inline-block: acts like a block element, but only takes up as much width as it needs 
-                                 * - grid: for CSS Grid layout */
-  
-  justify-content: center;      /* Aligns child elements horizontally within the container.
-                                 * Other values:
-                                 * - flex-start: Aligns to the start of the container
-                                 * - flex-end: Aligns to the end of the container
-                                 * - center: Aligns to the center of the container
-                                 * - space-between: Distributes space evenly between items
-                                 * - space-around: Distributes space around items */
-  
-  align-items: center;          /* Aligns child elements vertically within the container.
-                                 * Other values:
-                                 * - flex-start: Aligns to the start of the container
-                                 * - flex-end: Aligns to the end of the container
-                                 * - center: Aligns to the center of the container
-                                 * - baseline: Aligns to the baseline of text (useful for mixed content)
-                                 * - stretch: Stretches the child elements to fill the container's height (default) */
-  
-  height: 100%;                 /* Sets the height of the container to 100% of its parent's height.
-                                 * Other values:
-                                 * - px: Fixed pixel values (e.g., 500px)
-                                 * - vh: Percentage of the viewport height (e.g., 50vh is 50% of the viewport height)
-                                 * - %: Percentage of the parent container's height
-                                 * - auto: Automatically adjusts based on the content size */
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 .center-container img {
-  width: 10%;                   /* Sets the width of the images inside the container.
-                                 * Other values:
-                                 * - px: Fixed pixel values (e.g., 200px)
-                                 * - %: Percentage of the parent container's width
-                                 * - vw: Percentage of the viewport width (1vw = 1% of the viewport width)
-                                 * - auto: Automatically adjusts to maintain the image's aspect ratio */
+  width: 10%;
 }
 </style>
 
